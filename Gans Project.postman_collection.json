@@ -1,0 +1,311 @@
+{
+	"info": {
+		"_postman_id": "7697cc1d-0002-4905-92fe-fb497c96904d",
+		"name": "Gans Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29702969"
+	},
+	"item": [
+		{
+			"name": "Avatar and Image",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "avatar_images",
+							"type": "file",
+							"src": "/Users/apple/Documents/gans_api/gans_avatar/static/images/avatar/woman_5.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}imageavatar/",
+					"host": [
+						"{{base_url}}imageavatar"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Avatar and Image",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{base_url}}getimageavatar/",
+					"host": [
+						"{{base_url}}getimageavatar"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Background Image",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "background_image",
+							"type": "file",
+							"src": "/Users/apple/Documents/gans_api/gans_avatar/static/images/background_images/bg4.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}bgimage/",
+					"host": [
+						"{{base_url}}bgimage"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Background Image",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}getbgimage/",
+					"host": [
+						"{{base_url}}getbgimage"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Combined Image",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "backgroun_final",
+							"type": "file",
+							"src": "/Users/apple/Documents/gans_api/gans_avatar/static/images/combine/final_output.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}postcombinedimage/",
+					"host": [
+						"{{base_url}}postcombinedimage"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Combined Image",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}getcombinedimage/",
+					"host": [
+						"{{base_url}}getcombinedimage"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Audio Gen",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "prompt",
+							"value": "test-6",
+							"type": "text"
+						},
+						{
+							"key": "language",
+							"value": "Spanish",
+							"type": "text"
+						},
+						{
+							"key": "voice",
+							"value": "test voice",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "gender",
+							"value": "Male",
+							"type": "text"
+						},
+						{
+							"key": "video_image",
+							"value": "test video image",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}postaudiogen/",
+					"host": [
+						"{{base_url}}postaudiogen"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Audio Gen",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}getaudiogen/",
+					"host": [
+						"{{base_url}}getaudiogen"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post OnClick",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "click",
+							"value": "True",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}postonlyclick/",
+					"host": [
+						"{{base_url}}postonlyclick"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Bg & Avatar Combined Result",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "avatar_image",
+							"type": "file",
+							"src": "/Users/apple/Documents/gans_api/gans_avatar/static/images/avatar/woman_5.png",
+							"disabled": true
+						},
+						{
+							"key": "background_image",
+							"type": "file",
+							"src": "/Users/apple/Documents/gans_api/gans_avatar/static/images/background_images/bg2.png",
+							"disabled": true
+						},
+						{
+							"key": "avatar_image",
+							"value": "woman_5.png",
+							"type": "text"
+						},
+						{
+							"key": "background_image",
+							"value": "bg2.png",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}finalcombinedimage/",
+					"host": [
+						"{{base_url}}finalcombinedimage"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Bg & Avatar Combined Result",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{base_url}}getcombinedimage/",
+					"host": [
+						"{{base_url}}getcombinedimage"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
